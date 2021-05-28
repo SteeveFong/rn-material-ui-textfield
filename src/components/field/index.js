@@ -53,6 +53,7 @@ export default class TextField extends PureComponent {
     disabledLineType: 'dotted',
 
     disabled: false,
+    focused: false,
   }
 
   static propTypes = {
@@ -98,6 +99,7 @@ export default class TextField extends PureComponent {
     disabledLineType: Line.propTypes.lineType,
 
     disabled: PropTypes.bool,
+    focused: PropTypes.bool,
 
     formatText: PropTypes.func,
 
@@ -159,7 +161,7 @@ export default class TextField extends PureComponent {
 
     this.inputRef = this.props.inputRef ?? React.createRef()
     this.mounted = false
-    this.focused = false
+    this.focused = this.props.focused
 
     let { value, error, fontSize } = this.props
 

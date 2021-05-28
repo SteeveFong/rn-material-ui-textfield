@@ -95,6 +95,7 @@ class Example extends Component {
 | animationDuration    | Text field animation duration in ms         |    Number | 225                     |
 | characterRestriction | Text field soft limit for character counter |    Number | -                       |
 | disabled             | Text field availability                     |   Boolean | false                   |
+| focused              | Text field focused by default               |   Boolean | false                   |
 | editable             | Text field text can be edited               |   Boolean | true                    |
 | multiline            | Text filed multiline input                  |   Boolean | false                   |
 | contentInset         | Layout configuration object                 |    Object | [{...}](#content-inset) |
